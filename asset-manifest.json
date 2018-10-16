@@ -1,14 +1,14 @@
 {
-  "main.css": "/Psypher/static/css/main.70133ee7.chunk.css",
-  "main.js": "/Psypher/static/js/main.34873fe2.chunk.js",
-  "main.js.map": "/Psypher/static/js/main.34873fe2.chunk.js.map",
-  "static/js/1.6105a37c.chunk.js": "/Psypher/static/js/1.6105a37c.chunk.js",
-  "static/js/1.6105a37c.chunk.js.map": "/Psypher/static/js/1.6105a37c.chunk.js.map",
-  "runtime~main.js": "/Psypher/static/js/runtime~main.7d0d2ecd.js",
-  "runtime~main.js.map": "/Psypher/static/js/runtime~main.7d0d2ecd.js.map",
-  "static/media/logo.svg": "/Psypher/static/media/logo.5d5d9eef.svg",
-  "static/css/main.70133ee7.chunk.css.map": "/Psypher/static/css/main.70133ee7.chunk.css.map",
-  "index.html": "/Psypher/index.html",
-  "precache-manifest.03053f9549b1cba85714df73f3598d79.js": "/Psypher/precache-manifest.03053f9549b1cba85714df73f3598d79.js",
-  "service-worker.js": "/Psypher/service-worker.js"
+  "main.css": "/Psypher.git/static/css/main.70133ee7.chunk.css",
+  "main.js": "/Psypher.git/static/js/main.eeb6d102.chunk.js",
+  "main.js.map": "/Psypher.git/static/js/main.eeb6d102.chunk.js.map",
+  "static/js/1.6105a37c.chunk.js": "/Psypher.git/static/js/1.6105a37c.chunk.js",
+  "static/js/1.6105a37c.chunk.js.map": "/Psypher.git/static/js/1.6105a37c.chunk.js.map",
+  "runtime~main.js": "/Psypher.git/static/js/runtime~main.fc090ca1.js",
+  "runtime~main.js.map": "/Psypher.git/static/js/runtime~main.fc090ca1.js.map",
+  "static/media/logo.svg": "/Psypher.git/static/media/logo.5d5d9eef.svg",
+  "static/css/main.70133ee7.chunk.css.map": "/Psypher.git/static/css/main.70133ee7.chunk.css.map",
+  "index.html": "/Psypher.git/index.html",
+  "precache-manifest.c5e498d45f5f1843be9acf797a56f8d0.js": "/Psypher.git/precache-manifest.c5e498d45f5f1843be9acf797a56f8d0.js",
+  "service-worker.js": "/Psypher.git/service-worker.js"
 }
