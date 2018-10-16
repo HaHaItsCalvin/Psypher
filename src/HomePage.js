@@ -32,10 +32,13 @@ const theme = createMuiTheme({		});
 
 export class HomePage extends React.Component {
 	render() {
+	console.log('start')
+    console.log('New Test with NavBar')
+    console.log(process.env.PUBLIC_URL)
+    console.log('end')
 		return(
 			<Grid container direction="column" justify="center" alignItems="center" style={styles.outerContainer} med={12}>
 				<NavBar />
-
 			</Grid>
 		)
 	}

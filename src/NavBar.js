@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Background from './Corgeek.jpg';
 
 const theme = createMuiTheme({
   palette: {
@@ -49,13 +48,13 @@ export default class NewNavBar extends React.Component{
             <Toolbar>
                 <Grid container direction="row" justify="space-between">
                   <Grid item med={3}>
-                      <Button component={Link} to="/">
+                      <Button component={Link} to={process.env.PUBLIC_URL+'/'}>
                          Psypher Image Here
                       </Button>
                   </Grid>
                     
                   <Grid item med={3}>
-                    <Button component={Link} to="/">
+                    <Button component={Link} to={process.env.PUBLIC_URL+'/'}>
                        Home
                     </Button>
 

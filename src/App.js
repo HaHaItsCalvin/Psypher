@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 
@@ -12,12 +9,21 @@ import Workshops from './Workshops';
 
 class App extends Component {
   render() {
+    var x="hello"
+    console.log('start')
+    console.log(process.env.PUBLIC_URL)
+    console.log('end')
+    console.log(x)
     return (
-    
-      <div > 
-          <h1> Test </h1>           
-      </div>
+    <Router>
+      <div >            
+          <Route exact path= {process.env.PUBLIC_URL+'/'} component={HomePage} />
+          <Route path="/About" component={About} />
+          <Route path="/Partners" component={Partners} />
+          <Route path="/Workshops" component={Workshops} />
 
+      </div>
+    </Router>
     )
   }
 }

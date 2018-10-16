@@ -1,12 +1,12 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Image from 'material-ui-image'
-import Background from './Corgeek.jpg';
 import NavBar from './NavBar';
 
 export class About extends React.Component{
 	render() {
+	console.log('start')
+    console.log('New Test with NavBar')
+    console.log(process.env.PUBLIC_URL)
+    console.log('end')
 		return(
 			<div>
 				<NavBar/>
