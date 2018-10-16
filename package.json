@@ -1,7 +1,7 @@
 {
-  "homepage": "http://StealthxFox.github.io/StealthxFox",
   "name": "psypher_website",
   "version": "0.1.0",
+  "homepage": "http://StealthxFox.github.io/Psypher",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.2.2",
