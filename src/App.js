@@ -13,14 +13,11 @@ import Workshops from './Workshops';
 class App extends Component {
   render() {
     return (
-    <Router>
-      <div >            
-          <Route exact path="/" component={HomePage} />
-          <Route path="/About" component={About} />
-          <Route path="/Partners" component={Partners} />
-          <Route path="/Workshops" component={Workshops} />
+    
+      <div > 
+          <h1> Test </h1>           
       </div>
-    </Router>
+
     )
   }
 }
