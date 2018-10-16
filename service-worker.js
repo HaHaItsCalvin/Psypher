@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/StealthxFox/precache-manifest.5aff6ccf520b0ddd476ff86a0278c27a.js"
+  "/Psypher/precache-manifest.2e9f0fd984456bedede1c91606f6dfb6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/StealthxFox/index.html", {
+workbox.routing.registerNavigationRoute("/Psypher/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
