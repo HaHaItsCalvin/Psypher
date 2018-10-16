@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/StealthxFox/static/js/runtime~main.37d85b6d.js"
   },
   {
-    "revision": "aaf10ff6e3970dcfd33b",
-    "url": "/StealthxFox/static/js/main.aaf10ff6.chunk.js"
+    "revision": "2756f057a02ce49582f1",
+    "url": "/StealthxFox/static/js/main.2756f057.chunk.js"
   },
   {
-    "revision": "a481d2ae6377be0cc4ab",
-    "url": "/StealthxFox/static/js/1.a481d2ae.chunk.js"
+    "revision": "a2f757cb6b4d453a00a7",
+    "url": "/StealthxFox/static/js/1.a2f757cb.chunk.js"
   },
   {
-    "revision": "aaf10ff6e3970dcfd33b",
+    "revision": "2756f057a02ce49582f1",
     "url": "/StealthxFox/static/css/main.cde26b9e.chunk.css"
   },
   {
-    "revision": "7142841b9afd78819155971d002362f7",
+    "revision": "1271c15dab4627b8318e522a50c5c1d7",
     "url": "/StealthxFox/index.html"
   }
 ];
