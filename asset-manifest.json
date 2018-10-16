@@ -1,14 +1,14 @@
 {
-  "main.css": "/Psypher/static/css/main.cde26b9e.chunk.css",
-  "main.js": "/Psypher/static/js/main.447ff36a.chunk.js",
-  "main.js.map": "/Psypher/static/js/main.447ff36a.chunk.js.map",
-  "static/js/1.a481d2ae.chunk.js": "/Psypher/static/js/1.a481d2ae.chunk.js",
-  "static/js/1.a481d2ae.chunk.js.map": "/Psypher/static/js/1.a481d2ae.chunk.js.map",
+  "main.css": "/Psypher/static/css/main.70133ee7.chunk.css",
+  "main.js": "/Psypher/static/js/main.34873fe2.chunk.js",
+  "main.js.map": "/Psypher/static/js/main.34873fe2.chunk.js.map",
+  "static/js/1.6105a37c.chunk.js": "/Psypher/static/js/1.6105a37c.chunk.js",
+  "static/js/1.6105a37c.chunk.js.map": "/Psypher/static/js/1.6105a37c.chunk.js.map",
   "runtime~main.js": "/Psypher/static/js/runtime~main.7d0d2ecd.js",
   "runtime~main.js.map": "/Psypher/static/js/runtime~main.7d0d2ecd.js.map",
-  "static/media/Corgeek.jpg": "/Psypher/static/media/Corgeek.4ab31dc4.jpg",
-  "static/css/main.cde26b9e.chunk.css.map": "/Psypher/static/css/main.cde26b9e.chunk.css.map",
+  "static/media/logo.svg": "/Psypher/static/media/logo.5d5d9eef.svg",
+  "static/css/main.70133ee7.chunk.css.map": "/Psypher/static/css/main.70133ee7.chunk.css.map",
   "index.html": "/Psypher/index.html",
-  "precache-manifest.3e73db0793f3b6d20bce4a277a0de272.js": "/Psypher/precache-manifest.3e73db0793f3b6d20bce4a277a0de272.js",
+  "precache-manifest.03053f9549b1cba85714df73f3598d79.js": "/Psypher/precache-manifest.03053f9549b1cba85714df73f3598d79.js",
   "service-worker.js": "/Psypher/service-worker.js"
 }
