@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/Psypher/static/js/runtime~main.7d0d2ecd.js"
   },
   {
-    "revision": "5e7f1eb824cbeeeef9ff",
-    "url": "/Psypher/static/js/main.5e7f1eb8.chunk.js"
+    "revision": "3608afe408092532f897",
+    "url": "/Psypher/static/js/main.3608afe4.chunk.js"
   },
   {
     "revision": "914da92d794d513cd6bc",
     "url": "/Psypher/static/js/1.914da92d.chunk.js"
   },
   {
-    "revision": "5e7f1eb824cbeeeef9ff",
+    "revision": "3608afe408092532f897",
     "url": "/Psypher/static/css/main.2d79f979.chunk.css"
   },
   {
-    "revision": "2f47eb19acdf305b567f42c78934105c",
+    "revision": "39b604492647f203cec01cd0c7b87d05",
     "url": "/Psypher/index.html"
   }
 ];
