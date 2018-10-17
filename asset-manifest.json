@@ -1,14 +1,14 @@
 {
   "main.css": "/Psypher/static/css/main.2d79f979.chunk.css",
-  "main.js": "/Psypher/static/js/main.bdecc448.chunk.js",
-  "main.js.map": "/Psypher/static/js/main.bdecc448.chunk.js.map",
-  "static/js/1.914da92d.chunk.js": "/Psypher/static/js/1.914da92d.chunk.js",
-  "static/js/1.914da92d.chunk.js.map": "/Psypher/static/js/1.914da92d.chunk.js.map",
+  "main.js": "/Psypher/static/js/main.ef300f30.chunk.js",
+  "main.js.map": "/Psypher/static/js/main.ef300f30.chunk.js.map",
+  "static/js/1.11b65fd9.chunk.js": "/Psypher/static/js/1.11b65fd9.chunk.js",
+  "static/js/1.11b65fd9.chunk.js.map": "/Psypher/static/js/1.11b65fd9.chunk.js.map",
   "runtime~main.js": "/Psypher/static/js/runtime~main.7d0d2ecd.js",
   "runtime~main.js.map": "/Psypher/static/js/runtime~main.7d0d2ecd.js.map",
   "static/media/Corgeek.jpg": "/Psypher/static/media/Corgeek.4ab31dc4.jpg",
   "static/css/main.2d79f979.chunk.css.map": "/Psypher/static/css/main.2d79f979.chunk.css.map",
   "index.html": "/Psypher/index.html",
-  "precache-manifest.ae81082400282e846021e060ba9d1e31.js": "/Psypher/precache-manifest.ae81082400282e846021e060ba9d1e31.js",
+  "precache-manifest.60a92eacc1b7709adaecc096b1ca4d62.js": "/Psypher/precache-manifest.60a92eacc1b7709adaecc096b1ca4d62.js",
   "service-worker.js": "/Psypher/service-worker.js"
 }
