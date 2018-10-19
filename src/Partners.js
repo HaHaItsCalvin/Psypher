@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
+import TitlebarGridList from './TitlebarGridList.js';
+
 const styles = theme => ({
 	heroUnit: {
 	    backgroundColor: theme.palette.background.paper,
@@ -125,7 +127,8 @@ function Partners(props) {
 		            </div>
 		          </div>
 		        </div>
-
+		    {/*Start Third Section */}
+		    <TitlebarGridList/>
 			</main>
 			<Footer/>
 		</React.Fragment>

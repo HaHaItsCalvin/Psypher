@@ -16,7 +16,6 @@ import Footer from './Footer';
 import image from './Corgeek.jpg';
 import image2 from './AnthonyLee.jpg';
 import image3 from './SorahYang.jpg';
-import MediaCards from './MediaCards';
 
 const styles = theme => ({
   appBar: {
@@ -72,56 +71,42 @@ const styles = theme => ({
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-function Workshops(props) {
+function MediaCards(props) {
   const { classes } = props;
-    console.log('start')
-    console.log('New Test with NavBar')
-    console.log(process.env.PUBLIC_URL)
-    console.log('end')
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <NavBar/>
-        <main>
-        {/* Hero unit */}
-        <div className={classes.heroUnit}>
-          <div className={classes.heroContent}>
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Workshops
-            </Typography>
-            <Typography variant="h6" align="center" color="textSecondary" paragraph>
-                Something short and leading about the collection below—its contents, the creator, etc.
-                Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-                entirely.
-            </Typography>
-            
-            <div className={classes.heroButtons}>
-              <Grid container spacing={16} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Find One Near You
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Contact Us
-                  </Button>
-                </Grid>
+        <div className={classNames(classes.layout, classes.cardGrid)}>
+          <Grid container spacing={40}>
+            {cards.map(card => (
+              <Grid item key={card} sm={6} md={4} lg={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={image3}
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Heading
+                    </Typography>
+                    <Typography>
+                      This is a media card. You can use this section to describe the content.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Learn More
+                    </Button>
+                  </CardActions>
+                </Card>
               </Grid>
-            </div>
-          </div>
+            ))}
+          </Grid>
         </div>
-     
-        {/* End hero unit */}   
-        <MediaCards/>
-      </main>
-      <Footer/>
-    </React.Fragment>
-  );
-}
+    )
+  }
 
-Workshops.propTypes = {
+MediaCards.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Workshops);
+export default withStyles(styles)(MediaCards);
