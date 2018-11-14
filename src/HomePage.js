@@ -106,6 +106,34 @@ function HomePage(props) {
 		        </div>
 
 		    {/*Start Third Section */}
+		    	<div className={classes.heroUnit}>
+		          <div className={classes.heroContent}>
+		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+		              Statistics
+		            </Typography>
+		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
+		              Something short and leading about the collection below—its contents, the creator, etc.
+		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+		              entirely.
+		            </Typography>
+		            <div className={classes.heroButtons}>
+		              <Grid container spacing={16} justify="left">
+		                <Grid item>
+		                  <Button variant="outlined" color="primary">
+		                    Learn More
+		                  </Button>
+		                </Grid>
+		                <Grid item>
+		                  <Button variant="outlined" color="primary">
+		                    Contact Us
+		                  </Button>
+		                </Grid>
+		              </Grid>
+		            </div>
+		          </div>
+		        </div>
+
+		    {/*Start Footer Section */}
 		</main>
 			<Footer/>
 		</React.Fragment>

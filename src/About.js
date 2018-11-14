@@ -68,16 +68,24 @@ function About(props) {
 
 				
 			</Grid>
+
+			{/*Start First Section */}
 			<div className={classes.heroUnit}>
 		          <div className={classes.heroContent}>
 		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-		              About Us
+		              Mission
 		            </Typography>
 		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
-		              Something short and leading about the collection below—its contents, the creator, etc.
-		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-		              entirely.
+		              Our mission is to destigmatize mental health through urban dance workshops that 
+		              (1) increase mental health literacy, (2) highlight dance as an expressive outlet, 
+		              and (3) raise awareness of local mental health resources.
 		            </Typography>
+					<Typography component="h2" >
+		            We host our workshops for schools, dance teams, studios, and various organizations. 
+		            Get in touch with us at the bottom of this page if you’d like to learn more about 
+		            having us host a workshop for you!
+		            </Typography>
+		            
 		            <div className={classes.heroButtons}>
 		              <Grid container spacing={16} justify="left">
 		                <Grid item>
@@ -94,6 +102,49 @@ function About(props) {
 		            </div>
 		          </div>
 		        </div>
+
+		    {/*Start Second Section */}
+		    	<div className={classes.heroUnit}>
+		          <div className={classes.heroContent}>
+		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+		              Statistics
+		            </Typography>
+		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
+		              Something short and leading about the collection below—its contents, the creator, etc.
+		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+		              entirely.
+		            </Typography>
+		          </div>
+		        </div>
+
+		    {/*Start Third Section */}
+		    	<div className={classes.heroUnit}>
+		          <div className={classes.heroContent}>
+		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+		              Testimonials
+		            </Typography>
+		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
+		              Something short and leading about the collection below—its contents, the creator, etc.
+		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+		              entirely.
+		            </Typography>
+		          </div>
+		        </div>
+
+		    {/*Start Fourth Section */}
+		    	<div className={classes.heroUnit}>
+		          <div className={classes.heroContent}>
+		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+		              Meet the Team
+		            </Typography>
+		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
+		              Something short and leading about the collection below—its contents, the creator, etc.
+		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+		              entirely.
+		            </Typography>
+		          </div>
+		        </div>
+
 			<Footer/>
 		</React.Fragment>
 		)

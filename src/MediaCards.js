@@ -13,9 +13,16 @@ import { withStyles } from '@material-ui/core/styles';
 import NavBar from './NavBar';
 import Footer from './Footer';
 
+
 import image from './Corgeek.jpg';
-import image2 from './AnthonyLee.jpg';
-import image3 from './SorahYang.jpg';
+import MiyukiKanada from './MiyukiKanada.jpg';
+import LisaGoldfein from './LisaGoldfein.JPG';
+import TracyBevington from './TracyBevington.jpg';
+import SeanYee from './SeanYee.jpg';
+import TuDevera from './TuDevera.jpg';
+import BeauFournier from './BeauFournier.jpg';
+import ArnelCalvario from './ArnelCalvario.JPG';
+
 
 const styles = theme => ({
   appBar: {
@@ -58,7 +65,7 @@ const styles = theme => ({
     flexDirection: 'column',
   },
   cardMedia: {
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '150%', // 16:9
   },
   cardContent: {
     flexGrow: 1,
@@ -69,27 +76,91 @@ const styles = theme => ({
   },
 });
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const cardData = [
+    {
+      img: MiyukiKanada,
+      Name: 'Miyuki Kanda',
+      occupation: 'Licensed Marriage & Family Therapist, Board Certified Dance/Movement Therapist',
+      specializations: 'Body-Oriented Psychotherapy, Authentic Movement, Dance Movement Therapy',
+      organizations: 'Private Practice',
+      Email: 'kmiyukidmt@gmail.com',
+      Link: 'http://www.miyukikanda.com',
+    },    
+    {
+      img: LisaGoldfein,
+      Name: 'Lisa Goldfein',
+      occupation: 'Licensed Marriage & Family Therapist, Board Certified Dance/Movement Therapist',
+      specializations: 'Dance Movement Therapy, Mindfulness, Group Therapy',
+      organizations: 'Casa Capri Recovery',
+      Email: 'lisagdmt@gmail.com',
+      Link: 'https://www.linkedin.com/in/lisa-goldfeinlpccbcdmt/',
+    },
+    {
+      img: TracyBevington,
+      Name: 'Tracy Bevington',
+      occupation: 'Marriage & Family Therapist',
+      specializations: 'Solution Focused Therapy, Cognitive Behavioral Therapy (CBT), Psychodynamic Therapy, Gestalt Therapy, Somatic Experiencing, Family Systems, and Attachment Therapy', 
+      organizations: 'President & Founder of Pacific MFT Network',
+      Email: 'tracy@pacificmft.com',
+      Link: 'https://www.pacificmft.com',
+    },
+    {      
+      img: SeanYee,
+      Name: 'Sean Yee',
+      occupation: 'Research Administrator',
+      specializations:'',
+      organizations: 'John Wayne Cancer Institute',
+      Email: 'uclasy@gmail.com',
+      Link: 'https://www.linkedin.com/in/uclasy/',
+    },
+    {      
+      img: TuDevera,
+      Name: 'Tu Devera',
+      occupation: 'Co-Founder/Director of EDS',
+      specializations:'Operations Director',
+      organizations: 'Elements Dance Space',
+      Email: 'tu@elementsdancespace.com ',
+      Link: 'https://www.elementsdancespace.com/about/',
+    },
+    {      
+      img: BeauFournier,
+      Name: 'Beau Fournier',
+      occupation: 'Co-Founder/Director of EDS',
+      specializations:'Artistic Director',
+      organizations: 'Elements Dance Space; Maker Empire',
+      Email: 'beau@fannypak.com ',
+      Link: 'https://www.elementsdancespace.com/about/',
+    },
+    {      
+      img: ArnelCalvario,
+      Name: 'Arnel Calvario',
+      occupation: 'Doctor of Occupational Therapy/President of Culture Shock International',
+      specializations:'Occupational Therapy, Hip Hop History Education, Youth',
+      organizations: 'Culture Shock, Kinjaz, Kaba Modern, KM Legacy',
+      Email: 'arnel@kinjaz.com ',
+      Link: 'http://cultureshockdance.org/',
+    },
+ ];
 
 function MediaCards(props) {
   const { classes } = props;
   return (
         <div className={classNames(classes.layout, classes.cardGrid)}>
           <Grid container spacing={40}>
-            {cards.map(card => (
-              <Grid item key={card} sm={6} md={4} lg={4}>
+            {cardData.map(card => (
+              <Grid item key={card.img} sm={6} md={4} lg={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={image3}
-                    title="Image title"
+                    image={card.img}
+                    title={card.Name}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {card.Name}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      {card.occupation}
                     </Typography>
                   </CardContent>
                   <CardActions>
