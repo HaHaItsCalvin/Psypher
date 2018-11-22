@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/Psypher.61cafd4a.PNG"
   },
   {
-    "revision": "516ee823d6393b1ebd67",
+    "revision": "6abb9500b56e9b36ac71",
     "url": "/Psypher/static/css/main.e35a19a3.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/Background.71341147.png"
   },
   {
-    "revision": "516ee823d6393b1ebd67",
-    "url": "/Psypher/static/js/main.516ee823.chunk.js"
+    "revision": "6abb9500b56e9b36ac71",
+    "url": "/Psypher/static/js/main.6abb9500.chunk.js"
   },
   {
     "revision": "3678b833a645522042b410712ffe26d0",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ArnelCalvario.07e07372.JPG"
   },
   {
-    "revision": "76e9e2d9e878efec73ecd091100b60c3",
+    "revision": "9bd66f666be435b682c694e38d93a011",
     "url": "/Psypher/index.html"
   }
 ];
