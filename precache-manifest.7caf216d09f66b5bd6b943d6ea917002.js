@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "1bc32b8715a2ca7e2f26de020e7a170e",
-    "url": "/Psypher/static/media/AnthonyLee.1bc32b87.jpg"
+    "revision": "3678b833a645522042b410712ffe26d0",
+    "url": "/Psypher/static/media/Mission.3678b833.PNG"
   },
   {
-    "revision": "a38694725a903e5ab934",
-    "url": "/Psypher/static/css/main.08a03e72.chunk.css"
+    "revision": "5d8735892f611db9b2b0",
+    "url": "/Psypher/static/css/main.74eaae87.chunk.css"
   },
   {
-    "revision": "f5c2ffcf2cc40f73a077",
-    "url": "/Psypher/static/js/1.f5c2ffcf.chunk.js"
+    "revision": "aacc0fbf4d16971941b2",
+    "url": "/Psypher/static/js/1.aacc0fbf.chunk.js"
   },
   {
     "revision": "7d0d2ecd0133c69eb7c9",
@@ -24,8 +24,20 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/SorahYang.94970818.jpg"
   },
   {
-    "revision": "a38694725a903e5ab934",
-    "url": "/Psypher/static/js/main.a3869472.chunk.js"
+    "revision": "1bc32b8715a2ca7e2f26de020e7a170e",
+    "url": "/Psypher/static/media/AnthonyLee.1bc32b87.jpg"
+  },
+  {
+    "revision": "6e103e7fbe0a6f7f55b170c2c99ac153",
+    "url": "/Psypher/static/media/Psypher.6e103e7f.png"
+  },
+  {
+    "revision": "5d8735892f611db9b2b0",
+    "url": "/Psypher/static/js/main.5d873589.chunk.js"
+  },
+  {
+    "revision": "996d12be0c4a93233295ea5bce6a8221",
+    "url": "/Psypher/static/media/Statistics.996d12be.PNG"
   },
   {
     "revision": "526cec51d280b4b83efc2eb24ddac11a",
@@ -48,7 +60,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ArnelCalvario.07e07372.JPG"
   },
   {
-    "revision": "9191046d878d2d7dd08dd858651659e9",
+    "revision": "1c64c5c20fc04eb3df2f6b85148d2311",
     "url": "/Psypher/index.html"
   }
 ];
