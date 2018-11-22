@@ -80,7 +80,7 @@ function About(props) {
 		              (1) increase mental health literacy, (2) highlight dance as an expressive outlet, 
 		              and (3) raise awareness of local mental health resources.
 		            </Typography>
-					<Typography component="h2" >
+					<Typography variant="h6" color="textSecondary" >
 		            We host our workshops for schools, dance teams, studios, and various organizations. 
 		            Get in touch with us at the bottom of this page if you’d like to learn more about 
 		            having us host a workshop for you!
@@ -110,9 +110,14 @@ function About(props) {
 		              Statistics
 		            </Typography>
 		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
-		              Something short and leading about the collection below—its contents, the creator, etc.
-		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-		              entirely.
+		      
+		            		<ul> 1 in 5 children ages 13-18 have, or will have a serious mental illness. </ul>
+							<ul> 50% of all lifetime cases of mental illness begin by age 14</ul>
+							<ul> 90% of people who commit suicide had underlying mental illness.</ul>
+							<ul> Suicide is the 2nd leading cause of death for people aged 10-34 years old.</ul>
+							<ul> Every 13 seconds, someone takes their own life in the United States.</ul>
+							<ul> The average delay between onset of symptoms and intervention is 8-10 years.</ul>
+
 		            </Typography>
 		          </div>
 		        </div>
@@ -123,11 +128,39 @@ function About(props) {
 		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
 		              Testimonials
 		            </Typography>
-		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
-		              Something short and leading about the collection below—its contents, the creator, etc.
-		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-		              entirely.
-		            </Typography>
+		            <Grid container direction="row" justify="center" alignItems="center">
+		            	<Grid item>
+			            	<Typography variant="h6" align="left" color="textSecondary" paragraph>
+			              	Alexia Diaz: 
+			              	“Sometimes there is stuff that you feel is burdening you, 
+			              	and it’s hard to put it into words. Sometimes releasing it through 
+			              	a physical medium, through your body, lets you release that 
+			              	without having to say anything. 
+			              	That’s a cathartic experience.”
+			              	</Typography>
+		            	</Grid>
+		            	<Grid item>
+			            	<Typography variant="h6" align="left" color="textSecondary" paragraph>
+			              	Alexia Diaz: 
+			              	“Sometimes there is stuff that you feel is burdening you, 
+			              	and it’s hard to put it into words. Sometimes releasing it through 
+			              	a physical medium, through your body, lets you release that 
+			              	without having to say anything. 
+			              	That’s a cathartic experience.”
+			              	</Typography>
+		            	</Grid>
+		            	<Grid item>
+			            	<Typography variant="h6" align="left" color="textSecondary" paragraph>
+			              	Alexia Diaz: 
+			              	“Sometimes there is stuff that you feel is burdening you, 
+			              	and it’s hard to put it into words. Sometimes releasing it through 
+			              	a physical medium, through your body, lets you release that 
+			              	without having to say anything. 
+			              	That’s a cathartic experience.”
+			              	</Typography>
+		            	</Grid>
+		            </Grid>
+
 		          </div>
 		        </div>
 

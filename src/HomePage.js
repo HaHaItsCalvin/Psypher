@@ -132,7 +132,7 @@ function HomePage(props) {
 		            </div>
 		          </div>
 		        </div>
-
+		        
 		    {/*Start Footer Section */}
 		</main>
 			<Footer/>
