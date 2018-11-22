@@ -9,12 +9,66 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
-import Background from './Corgeek.jpg';
+import Background from './Psypher.png';
+import Mission from './Mission.PNG';
+import Statistics from './Statistics.PNG';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 //import Image from 'material-ui-image'
 
 
 const styles = theme => ({
+	topPicContainer: {
+		backgroundImage: `url(${Background})`,
+		backgroundColor: '#000000',
+		backgroundSize:'fit',
+		backgroundRepeat:'no-repeat',
+		height:"100vh",
+		width:"100%",
+		maxHeight:'937px',
+		backgroundPosition:'top',
+		backgroundAttachment:'fixed'
+	},
+	missionUnit:{
+		paddingTop:'10vh',
+		backgroundColor:'white',
+		paddingBottom:'10vh'
+	},
+	Mission: {
+		backgroundImage: `url(${Mission})`,
+		backgroundColor: 'white',
+		backgroundSize:'fit',
+		backgroundRepeat:'no-repeat',
+		height:"95vh",
+		width:"100%",
+		maxHeight:'1078px',
+		backgroundPosition:'center',
+		backgroundAttachment:'relative'
+	},
+	statsUnit:{
+
+	},
+	Statistics:{
+		backgroundImage: `url(${Statistics})`,
+		backgroundColor: 'white',
+		backgroundSize:'fit',
+		backgroundRepeat:'no-repeat',
+		height:"90vh",
+		width:"100%",
+		maxHeight:'1078px',
+		backgroundPosition:'center',
+		backgroundAttachment:'relative'
+	},
+
+	videoUnit:{
+
+	},
+	Videos:{
+
+	},
+
+	Testimonials:{
+
+	},
 	heroUnit: {
 	    backgroundColor: theme.palette.background.paper,
 	    paddingTop: '10vh',
@@ -37,13 +91,6 @@ const styles = theme => ({
 	      marginRight: 'auto',
 	    },
 	  },
-	outerContainer: {
-		backgroundImage: `url(${Background})`,
-		backgroundSize:'fit',
-		backgroundRepeat:'no-repeat',
-		backgroundPosition:'center',
-		height:"40vh",
-	},
 	text: {        
 		borderRadius: 3,
         border: 0,
@@ -66,77 +113,68 @@ function HomePage(props) {
     console.log('New Test with NavBar')
     console.log(process.env.PUBLIC_URL)
     console.log('end')
-		return(
-		<React.Fragment>
-      		<CssBaseline />
-      		<NavBar />
-      	<main>
-
-      		{/*First Section*/}
-			<Grid container direction="column" justify="center" alignItems="center" className={classes.outerContainer} med={12}>
+	return(
+	<React.Fragment>
+  		<CssBaseline />
+			<header> 
+				<NavBar />
+			</header>
+      		
+      		<main>
+      		{/*Home Banner Section*/}
+			<div className={classes.topPicContainer} med={12}> </div>
 			
-			</Grid>
-
-			{/*Start Second Section */}
-		    	<div className={classes.heroUnit}>
-		          <div className={classes.heroContent}>
-		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-		              Statistics
-		            </Typography>
-		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
-		              Something short and leading about the collection below—its contents, the creator, etc.
-		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-		              entirely.
-		            </Typography>
-		            <div className={classes.heroButtons}>
-		              <Grid container spacing={16} justify="left">
-		                <Grid item>
-		                  <Button variant="outlined" color="primary">
-		                    Learn More
-		                  </Button>
-		                </Grid>
-		                <Grid item>
-		                  <Button variant="outlined" color="primary">
-		                    Contact Us
-		                  </Button>
-		                </Grid>
-		              </Grid>
-		            </div>
+			{/*Start Mission Section */}
+		    <div className={classes.missionUnit}>
+		          <div className={classes.Mission}>
+		            
 		          </div>
-		        </div>
+		    </div>
 
-		    {/*Start Third Section */}
-		    	<div className={classes.heroUnit}>
-		          <div className={classes.heroContent}>
-		            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-		              Statistics
-		            </Typography>
-		            <Typography variant="h6" align="left" color="textSecondary" paragraph>
-		              Something short and leading about the collection below—its contents, the creator, etc.
-		              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-		              entirely.
-		            </Typography>
-		            <div className={classes.heroButtons}>
-		              <Grid container spacing={16} justify="left">
-		                <Grid item>
-		                  <Button variant="outlined" color="primary">
-		                    Learn More
-		                  </Button>
-		                </Grid>
-		                <Grid item>
-		                  <Button variant="outlined" color="primary">
-		                    Contact Us
-		                  </Button>
-		                </Grid>
-		              </Grid>
-		            </div>
-		          </div>
-		        </div>
-		        
-		    {/*Start Footer Section */}
-		</main>
-			<Footer/>
-		</React.Fragment>
+		    {/*Start Stats Section */}
+		    <div className={classes.Statistics}>
+		    </div>
+
+		    {/*Start Video Section */}
+		    <div className={classes.Video}>
+		    </div>
+
+			{/*Start Testimonials Section */}
+		    <div className={classes.Testimonials}>
+		    </div>
+
+			{/*Start ContactUs Section*/}
+
+			{/*Start Example Section*/}
+	    	<div className={classes.heroUnit}>
+	          <div className={classes.heroContent}>
+	            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+	              Statistics
+	            </Typography>
+	            <Typography variant="h6" align="left" color="textSecondary" paragraph>
+	              Something short and leading about the collection below—its contents, the creator, etc.
+	              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+	              entirely.
+	            </Typography>
+	            <div className={classes.heroButtons}>
+	              <Grid container spacing={16} justify="left">
+	                <Grid item>
+	                  <Button variant="outlined" color="primary">
+	                    Learn More
+	                  </Button>
+	                </Grid>
+	                <Grid item>
+	                  <Button variant="outlined" color="primary">
+	                    Contact Us
+	                  </Button>
+	                </Grid>
+	              </Grid>
+	            </div>
+	          </div>
+	        </div>
+			</main>
+		<Footer/>
+	</React.Fragment>
 	)
 	
 }
