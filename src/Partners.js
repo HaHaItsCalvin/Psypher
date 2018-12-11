@@ -16,7 +16,7 @@ import Footer from './Footer';
 import image from './Corgeek.jpg';
 import image2 from './AnthonyLee.jpg';
 import image3 from './SorahYang.jpg';
-import MediaCards from './MediaCards';
+import PartnerCards from './PartnerCards';
 
 const styles = theme => ({
   appBar: {
@@ -153,7 +153,7 @@ function Workshops(props) {
         </div>
      
         {/* End hero unit */}   
-        <MediaCards/>
+        <PartnerCards/>
       </main>
       <Footer/>
     </React.Fragment>

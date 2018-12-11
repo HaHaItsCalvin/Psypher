@@ -6,7 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-import BackgroundPsypher from './Psypher.PNG';
+import BackgroundPsypher from './Psypher.png';
+
 const styles = theme => ({
   navPsypher: {        
     borderRadius: 3,

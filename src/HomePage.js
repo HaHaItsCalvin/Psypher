@@ -11,7 +11,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import ContactUs from './ContactUs.PNG'
 import Background from './Background.png';
-import BackgroundPsypher from './Psypher.PNG';
+import BackgroundPsypher from './Psypher.png';
 import Mission from './Mission.PNG';
 import WHY from './WHY.PNG';
 import Statistics from './Statistics.PNG';

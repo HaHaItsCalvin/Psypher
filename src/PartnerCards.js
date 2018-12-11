@@ -61,7 +61,7 @@ const styles = theme => ({
   },
   card: {
     height: '100%',
-    display: 'flex',
+    display: 'block',
     flexDirection: 'column',
   },
   cardMedia: {
@@ -142,7 +142,7 @@ const styles = theme => ({
     },
  ];
 
-function MediaCards(props) {
+function PartnerCards(props) {
   const { classes } = props;
   return (
         <div className={classNames(classes.layout, classes.cardGrid)}>
@@ -176,8 +176,8 @@ function MediaCards(props) {
     )
   }
 
-MediaCards.propTypes = {
+PartnerCards.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MediaCards);
+export default withStyles(styles)(PartnerCards);
