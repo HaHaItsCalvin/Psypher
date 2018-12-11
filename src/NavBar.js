@@ -6,6 +6,25 @@ import Grid from '@material-ui/core/Grid';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
+import BackgroundPsypher from './Psypher.PNG';
+const styles = theme => ({
+  navPsypher: {        
+    borderRadius: 3,
+        border: 0,
+        color: 'black',
+        height: 48,
+        padding: '0 30px',
+        background:"white",
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+        fontWeight: 500,
+        fontSize: 48,
+        fontFamily: 'sans-serif',
+  },
+});
+const navPsypher={
+        height:48,
+};
+
 const theme = createMuiTheme({
   palette: {
     primary: { main:'#FAFAFA' }, // Purple and green play nicely together.
@@ -41,7 +60,7 @@ const theme = createMuiTheme({
 export default class NewNavBar extends React.Component{
   render(){
     return(
-      <div>
+      <React.Fragment>
       <MuiThemeProvider theme={theme}>
 
       <AppBar style={{ background: 'black', boxShadow:'30%'}}>
@@ -49,7 +68,7 @@ export default class NewNavBar extends React.Component{
                 <Grid container direction="row" justify="space-between">
                   <Grid item med={3}>
                       <Button component={Link} to={process.env.PUBLIC_URL+'/'}>
-                         Psypher Image Here
+                         <img src={BackgroundPsypher} style={navPsypher}/>
                       </Button>
                   </Grid>
                     
@@ -74,7 +93,7 @@ export default class NewNavBar extends React.Component{
             </Toolbar>
            </AppBar>
            </MuiThemeProvider>
-           </div>
+           </React.Fragment>
     )
   }
 }
