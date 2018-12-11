@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/Statistics.996d12be.PNG"
   },
   {
-    "revision": "7bbdbf77442dfd3967b1",
-    "url": "/Psypher/static/css/main.bc748211.chunk.css"
+    "revision": "e42235a7698bdee8f2fc",
+    "url": "/Psypher/static/css/main.ee584585.chunk.css"
   },
   {
-    "revision": "05f39681e6d10223fde7",
-    "url": "/Psypher/static/js/1.05f39681.chunk.js"
+    "revision": "63eb00e68b06ea920c86",
+    "url": "/Psypher/static/js/1.63eb00e6.chunk.js"
   },
   {
     "revision": "7d0d2ecd0133c69eb7c9",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/Mission.4499bce9.PNG"
   },
   {
-    "revision": "7bbdbf77442dfd3967b1",
-    "url": "/Psypher/static/js/main.7bbdbf77.chunk.js"
+    "revision": "e42235a7698bdee8f2fc",
+    "url": "/Psypher/static/js/main.e42235a7.chunk.js"
   },
   {
     "revision": "1bc32b8715a2ca7e2f26de020e7a170e",
@@ -46,6 +46,10 @@ self.__precacheManifest = [
   {
     "revision": "3789dfc7831252d46fc8daef0c1548c6",
     "url": "/Psypher/static/media/ContactUs.3789dfc7.PNG"
+  },
+  {
+    "revision": "abb730ddf3b982b1edc604f6d1341261",
+    "url": "/Psypher/static/media/WHY.abb730dd.PNG"
   },
   {
     "revision": "526cec51d280b4b83efc2eb24ddac11a",
@@ -68,7 +72,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ArnelCalvario.07e07372.JPG"
   },
   {
-    "revision": "3798c5b53caac0890ec285d96d35a40c",
+    "revision": "fb310440976550466d7ef99d43c3f51e",
     "url": "/Psypher/index.html"
   }
 ];
