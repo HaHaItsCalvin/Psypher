@@ -10,7 +10,8 @@ Install the following dependencies to render properly with npm start:
 2. Materual-UI --> DL'd using "npm install @material-ui/core" Also install picture rendering API for Home--> npm install 
 3. npm install material-ui-image
 4. npm install --save react-router-dom
-5. Set up GitHub Pages using the following link: https://www.youtube.com/watch?v=1Y-PqBH-htk
+5. npm install react-md-spinner
+6. Set up GitHub Pages using the following link: https://www.youtube.com/watch?v=1Y-PqBH-htk
 
 A few notes about GitHub Pages:
 0) To launch the GitHub page initially, run "npm run deploy" --> also used to make changes

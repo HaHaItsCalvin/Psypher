@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 
+import HomeVideoSection from './HomeVideoSection.js';
+import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
 import HomeMediaCards from './HomeMediaCards.js';
 import HomeMissionPics from './HomeMissionPics.js';
@@ -45,52 +47,25 @@ const styles = theme => ({
 	},
 	missionUnit:{
 		backgroundColor:'white',
-		padding: `${theme.spacing.unit * 2}px 0 ${theme.spacing.unit * 2}px`,
+		paddingTop:50,
+		paddingLeft: 50,
+		paddingRight:50,
+		paddingBottom:50,
 
 	},
-	missionBody:{
-
+	StatisticsUnit:{
+		paddingLeft: 50,
+		paddingRight:50,
+		paddingBottom:50,
 	},
-	MissionPicture: {
-		backgroundImage: `url(${Mission})`,
-		backgroundColor: 'white',
-		backgroundSize:'contain',
-		backgroundRepeat:'no-repeat',
-		height:"95vh",
-		width:"auto",
-		maxHeight:'1078px',
-		backgroundPosition:'center',
-		backgroundAttachment:'relative'
-	},
-	statsUnit:{
-
-	},
-	Statistics:{
-		backgroundImage: `url(${Statistics})`,
-		backgroundColor: 'white',
-		backgroundSize:'contain',
-		backgroundRepeat:'no-repeat',
-		height:"90vh",
-		width:"100%",
-		maxHeight:'1078px',
-		backgroundPosition:'center',
-		backgroundAttachment:'relative'
-	},
-	WhyUnit:{
-	},
-	Why:{
-		backgroundImage: `url(${WHY})`,
-		backgroundColor: 'white',
-		backgroundSize:'contain',
-		backgroundRepeat:'no-repeat',
-		height:"90vh",
-		width:"100%",
-		maxHeight:'1078px',
-		backgroundPosition:'center',
-		backgroundAttachment:'relative'
+	WhyUnit:{paddingLeft: 50,
+		paddingRight:50,
+		paddingBottom:50,
 	},
 	videoUnit:{
-
+		paddingLeft: 50,
+		paddingRight:50,
+		paddingBottom:50,
 	},
 	Video:{
 
@@ -100,38 +75,12 @@ const styles = theme => ({
 		paddingRight:50,
 		paddingBottom:50,
 	},
-
-	Testimonials:{
-		
-	},
 	contactUnit:{
-
+		paddingLeft: 50,
+		paddingRight:50,
+		paddingBottom:50,
 	},
-	ContactUs:{
-		backgroundImage: `url(${ContactUs})`,
-		backgroundColor: 'white',
-		backgroundSize:'contain',
-		backgroundRepeat:'no-repeat',
-		height:"90vh",
-		width:"100%",
-		maxHeight:'1078px',
-		backgroundPosition:'center',
-		backgroundAttachment:'relative'
-	},
-	heroUnit: {
-	    backgroundColor: theme.palette.background.paper,
-	    paddingTop: '10vh',
-	    paddingBottom: '10vh'
-	  },
-	  heroContent: {
-	    maxWidth: '70vh',
-	    margin: '0 10%',
-	    padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
-	  },
-	  heroButtons: {
-	    marginTop: theme.spacing.unit * 4,
-	  },
-	  layout: {
+	layout: {
 	    width: 'auto',
 	    marginLeft: theme.spacing.unit * 3,
 	    marginRight: theme.spacing.unit * 3,
@@ -180,21 +129,21 @@ function HomePage(props) {
 				<div className={classes.missionUnit}>
 				    <Grid container direction ='row'>
 				    	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-									Pic 1
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 1'
+							/>	
 				    	</Grid>
 				    	
 				    	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-								Pic 2
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 2'
+							/>		
 				    	</Grid>
 		              	
 		              	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-									Pic 3
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 3'
+							/>	
 				    	</Grid>
 				    </Grid>
 				    <Grid container direction ='row' alignItems='center'>
@@ -206,48 +155,63 @@ function HomePage(props) {
 									WHAT
 							</Typography>
 							<Typography align='right' variant='h4' color='textPrimary'>
-									IS PSYPHER
+									IS <span>PSYPHER</span>
 							</Typography>
 				    	</Grid>
-				    	<Grid item xs={2} sm={2}> 
-				    		<Typography align='center'>
-				    			Insert break
-				    		</Typography>
-				    	</Grid>
-				    	<Grid item sm={2}>
-							<Typography align='center' color='textPrimary'>
-									Increase mental health literacy
-							</Typography>	
-				    	</Grid>
-		              	
-		              	<Grid item sm={2}>
-							<Typography align='center' color='textPrimary'>
-									Highlight dance as an expressive outlet
-							</Typography>	
-				    	</Grid>
-				    	<Grid item sm={2}>
-							<Typography align='center' color='textPrimary'>
-									Partner with local mental health professionals
-							</Typography>	
-				    	</Grid>
+				    	<Grid item xs={2} sm={2}>
+						    		<Typography align='center'>
+						    			Insert break
+						    		</Typography>
+						</Grid>
+				    	<Grid item xs={6} sm={6}>
+					    	<Typography align='center'> 
+					    		<span>OUR MISSION </span>is to destigmatize mental health 
+					    	</Typography>
+					    	<Typography align='center'>
+					    		through urban dance workshops that
+					    	</Typography>
+					    	<Grid item container direction="row" justify='center' spacing={32}>
+						    	<Grid item sm={4}>
+						    		<HomeMissionCards
+						    			img="IMG"
+						    			keyword="Increase"
+						    			phrase="mental health literacy"
+						    		/>
+						    	</Grid>
+				              	<Grid item sm={4}>
+						    		<HomeMissionCards
+						    			img="IMG"
+						    			keyword="Highlight"
+						    			phrase="dance as an expressive outlet"
+						    		/>
+						    	</Grid>
+						    	<Grid item sm={4}>
+						    		<HomeMissionCards
+						    			img="IMG"
+						    			keyword="Partner"
+						    			phrase="with local mental health professionals"
+						    		/>
+						    	</Grid>
+						    </Grid>
+						</Grid>
 				    </Grid>
 				     <Grid container direction ='row'>
 				    	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-									Pic 1
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 4'
+							/>	
 				    	</Grid>
 				    	
 				    	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-								Pic 2
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 5'
+							/>		
 				    	</Grid>
 		              	
 		              	<Grid item xs={4} sm={4}>
-							<Typography align='center' color='textPrimary'>
-									Pic 3
-							</Typography>	
+							<HomeMissionPics
+								Quote='pic 6'
+							/>	
 				    	</Grid>
 				    </Grid>
 			    </div>
@@ -301,17 +265,24 @@ function HomePage(props) {
 			    		<Typography> Despite all this, the average delay between the onset of symptoms of mental illness and intervention is </Typography>
 			    		<Typography variant='h2'> 8-10 <span> YEARS...</span>WHY?</Typography>
 			    		<Typography> It's time to <span>innovate</span> and <span>reimagine</span> what mental health resources look like. </Typography>			    		
-			    		<Typography> We can't just react to mental illness like this... </Typography>
+			    		<Typography> We can't just react to mental illness. </Typography>
 			    		<Typography> We need to be proactive about mental health. </Typography>
 			    	</Grid>
-			    	<div className={classes.Why}> </div>
 			    </div>
 
 
 		    {/*Start Video Section */}
-		    	<div className={classes.videoUnit}>
-			    	<div className={classes.Video}> </div>
-			    </div>
+		    	<Grid container direction='column' className={classes.videoUnit}>
+			    	<Grid item>
+			    		<Typography variant='h2' align='center'> Latest Videos </Typography>
+			    	</Grid>
+			    	<Grid item>
+			    		<HomeVideoSection
+			    			Title="Social Media"
+			    			Body="Exploring the role of social media in mental health."
+			    		/>
+			    	</Grid>
+			    </Grid>
 			
 
 			{/*Start Testimonials Section */}
@@ -327,7 +298,6 @@ function HomePage(props) {
 									Background="Psypher Participant"	
 							/>
 				    	</Grid>
-				    	
 				    	<Grid item sm={4}> 
 							<HomeTestimonialsCards
 									Quote="Sometimes there is stuff that you feel is burdening you, and it’s hard to put it into words. Sometimes releasing it 
@@ -337,7 +307,6 @@ function HomePage(props) {
 									Background="Psypher Participant"	
 							/>
 				    	</Grid>
-		              	
 		              	<Grid item sm={4}> 
 							<HomeTestimonialsCards
 									Quote="Talking about mental health is just really unapproachable and sometimes even boring for other people.  
@@ -386,9 +355,7 @@ function HomePage(props) {
 							</Grid>
 				    	</Grid>
 			    	</Grid>
-			          <div className={classes.ContactUs}> </div>
 			    </div>
-			{/*Start Example Section*/}
 	    	
 	        </main>
 		<Footer/>
