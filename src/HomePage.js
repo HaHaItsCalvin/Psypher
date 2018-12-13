@@ -15,8 +15,6 @@ import BackgroundPsypher from './Psypher.png';
 import Mission from './Mission.PNG';
 import WHY from './WHY.PNG';
 import Statistics from './Statistics.PNG';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-//import Image from 'material-ui-image'
 
 
 const styles = theme => ({

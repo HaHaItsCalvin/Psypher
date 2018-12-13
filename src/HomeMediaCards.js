@@ -7,18 +7,24 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
-
+  img:{
+    maxHeight:'70px',
+    maxWidth:'70px',
+    margin:'auto',
+    display:'block',
+    position:'center,'
+  },
 });
 
 function HomeMediaCards(props) {
   const { classes } = props;
   return (
         <div>
-            <img src={props.img}/>
-            <Typography align='center' color='textPrimary'>
+            <img src={props.img} className={classes.img}/>
+            <Typography align='center' color='textPrimary' variant='h6'>
               {props.Title}
             </Typography>
-            <Typography align='center' color='textPrimary'>
+            <Typography align='center' color='textPrimary' >
               {props.Body}
             </Typography>
          </div>   
