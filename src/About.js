@@ -17,7 +17,8 @@ import HomeMediaCards from './HomeMediaCards.js';
 import HomeMissionPics from './HomeMissionPics.js';
 import StatsCards from './StatsCard.js';
 
-import instaIcon from './instaIcon.jpg'
+import TestimonialsPic from './TestimonialsPic.jpg';
+import instaIcon from './instaIcon.jpg';
 import youtubeIcon from './youtubeIcon.jpg';
 import emailIcon from './emailIcon.jpg';
 import ContactUsBackground from './ContactUsBackground.png';
@@ -69,6 +70,10 @@ const styles = theme => ({
 		paddingBottom:'15vh',
 
 	},
+	missionBody:{
+		paddingTop:25,
+		paddingBottom:25,
+	},
 	StatisticsUnit:{
 		paddingLeft: '17vh',
 		paddingRight:'17vh',
@@ -112,6 +117,14 @@ const styles = theme => ({
 		paddingLeft: 50,
 		paddingRight:50,
 		paddingBottom:50,
+		backgroundImage: `url(${TestimonialsPic})`,
+		backgroundSize:'cover',
+		backgroundRepeat:'no-repeat',
+		width:'100%',
+		backgroundPosition:'center',
+		zIndex:"-1",
+		backgroundPosition:'center',
+		backgroundAttachment:'fixed',
 	},
 	contactUnit:{
 		paddingTop:'10vh',
@@ -196,7 +209,7 @@ function HomePage(props) {
 							/>	
 				    	</Grid>
 				    </Grid>
-				    <Grid container direction ='row' alignItems='center'>
+				    <Grid container direction ='row' alignItems='center' className={classes.missionBody}>
 				    	<Grid item xs={12} sm={4}>
 							<Typography align='right' variant='h3' color='textPrimary'>
 									WHO AND
@@ -210,7 +223,7 @@ function HomePage(props) {
 				    	</Grid>
 				    	<Grid item xs={0} sm={1}>
 				    	</Grid>
-				    	<Grid item xs={0} sm={1} style={{ borderLeft: '0.1em solid black', paddingTop:'2.5cm'}}>
+				    	<Grid item xs={0} sm={1} style={{ borderLeft: '0.1em solid black', paddingTop:'4cm'}}>
 						</Grid>
 				    	<Grid item xs={12} sm={6}>
 					    	<Typography align='center'> 
@@ -349,7 +362,7 @@ function HomePage(props) {
 									Background="Psypher Participant"	
 							/>
 				    	</Grid>
-				    	<Grid item sm={4}> 
+				    	<Grid item sm={4} style={{ borderLeft: '0.1em solid white', paddingTop:'0.5cm'}}> 
 							<HomeTestimonialsCards
 									Quote="Sometimes there is stuff that you feel is burdening you, and it’s hard to put it into words. Sometimes releasing it 
 										through a physical medium, through your body, lets you release that without having to say anything. 
@@ -358,7 +371,7 @@ function HomePage(props) {
 									Background="Psypher Participant"	
 							/>
 				    	</Grid>
-		              	<Grid item sm={4}> 
+		              	<Grid item sm={4} style={{ borderLeft: '0.1em solid white', paddingTop:'0.1cm'}}> 
 							<HomeTestimonialsCards
 									Quote="Talking about mental health is just really unapproachable and sometimes even boring for other people.  
 										Having dance to add this cool, fun aspect to it can keep you engaged. It makes 

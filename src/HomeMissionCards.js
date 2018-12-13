@@ -18,11 +18,13 @@ const styles = theme => ({
 function HomeMissionCards(props) {
   const { classes } = props;
   return (
-       	<Grid container direction='column '> 
-       		<img src={props.img} className={classes.img}/>
-			<Typography align='center' color='textPrimary'>
+       	<Grid container direction='column ' alignItems='center' justify='center'> 
+       	  <Grid item>
+          <img src={props.img} className={classes.img}/>
+			     <Typography align='center' color='textPrimary'>
 					{props.keyword} {props.phrase} {props.botPhrase}
-			</Typography> 
+			     </Typography>
+           </Grid> 
 		</Grid>
     )
   }
