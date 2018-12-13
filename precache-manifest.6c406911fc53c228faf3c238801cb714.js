@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "48fd7b70c4fe7f81d443",
-    "url": "/Psypher/static/css/main.114f7064.chunk.css"
+    "revision": "72a2574d85a672e10ac55422112b0e3a",
+    "url": "/Psypher/static/media/WhyClockPic.72a2574d.jpg"
   },
   {
-    "revision": "48fd7b70c4fe7f81d443",
-    "url": "/Psypher/static/js/main.48fd7b70.chunk.js"
+    "revision": "fecd71ee6023b5593dea",
+    "url": "/Psypher/static/css/main.aa7c9323.chunk.css"
   },
   {
-    "revision": "da56f24400928d5f24a2",
-    "url": "/Psypher/static/js/1.da56f244.chunk.js"
+    "revision": "58556b5e9178c492b8f0",
+    "url": "/Psypher/static/js/1.58556b5e.chunk.js"
   },
   {
     "revision": "7d0d2ecd0133c69eb7c9",
@@ -50,6 +50,22 @@ self.__precacheManifest = [
   {
     "revision": "996d12be0c4a93233295ea5bce6a8221",
     "url": "/Psypher/static/media/Statistics.996d12be.PNG"
+  },
+  {
+    "revision": "bcc2d8b3d65cd90a3c88c30013543dfe",
+    "url": "/Psypher/static/media/instaIcon.bcc2d8b3.jpg"
+  },
+  {
+    "revision": "2a123791167ba610a73d2b8be7ef1e44",
+    "url": "/Psypher/static/media/emailIcon.2a123791.jpg"
+  },
+  {
+    "revision": "1f4b9d7a87663b3c07362d685d7d5730",
+    "url": "/Psypher/static/media/ContactUsBackground.1f4b9d7a.png"
+  },
+  {
+    "revision": "fecd71ee6023b5593dea",
+    "url": "/Psypher/static/js/main.fecd71ee.chunk.js"
   },
   {
     "revision": "3c9b98369e1c8a8a2a09fdd05c6ad0c5",
@@ -108,7 +124,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ArnelCalvario.07e07372.JPG"
   },
   {
-    "revision": "7c26d1a87046e1ad9339874c120c95cf",
+    "revision": "b12fb1d39de6b4788062c5a182e23d33",
     "url": "/Psypher/index.html"
   }
 ];
