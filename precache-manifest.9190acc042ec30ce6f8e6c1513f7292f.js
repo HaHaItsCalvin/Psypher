@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "72a2574d85a672e10ac55422112b0e3a",
-    "url": "/Psypher/static/media/WhyClockPic.72a2574d.jpg"
+    "revision": "df9d468fe382cb63fbdd",
+    "url": "/Psypher/static/css/main.d7acf1e8.chunk.css"
   },
   {
-    "revision": "fecd71ee6023b5593dea",
-    "url": "/Psypher/static/css/main.aa7c9323.chunk.css"
+    "revision": "df9d468fe382cb63fbdd",
+    "url": "/Psypher/static/js/main.df9d468f.chunk.js"
   },
   {
-    "revision": "58556b5e9178c492b8f0",
-    "url": "/Psypher/static/js/1.58556b5e.chunk.js"
+    "revision": "ea76e9a9517eb84340a0",
+    "url": "/Psypher/static/js/1.ea76e9a9.chunk.js"
   },
   {
     "revision": "7d0d2ecd0133c69eb7c9",
@@ -28,28 +28,8 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/SorahYang.94970818.jpg"
   },
   {
-    "revision": "71341147832c9cea5a41c8e13472d311",
-    "url": "/Psypher/static/media/Background.71341147.png"
-  },
-  {
-    "revision": "1bc32b8715a2ca7e2f26de020e7a170e",
-    "url": "/Psypher/static/media/AnthonyLee.1bc32b87.jpg"
-  },
-  {
-    "revision": "3789dfc7831252d46fc8daef0c1548c6",
-    "url": "/Psypher/static/media/ContactUs.3789dfc7.PNG"
-  },
-  {
-    "revision": "4499bce9eaded83978ef3569f8855fd9",
-    "url": "/Psypher/static/media/Mission.4499bce9.PNG"
-  },
-  {
-    "revision": "abb730ddf3b982b1edc604f6d1341261",
-    "url": "/Psypher/static/media/WHY.abb730dd.PNG"
-  },
-  {
-    "revision": "996d12be0c4a93233295ea5bce6a8221",
-    "url": "/Psypher/static/media/Statistics.996d12be.PNG"
+    "revision": "81ba47692a7fd70363dfdf61268ac791",
+    "url": "/Psypher/static/media/TestimonialsPic.81ba4769.jpg"
   },
   {
     "revision": "bcc2d8b3d65cd90a3c88c30013543dfe",
@@ -64,8 +44,12 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ContactUsBackground.1f4b9d7a.png"
   },
   {
-    "revision": "fecd71ee6023b5593dea",
-    "url": "/Psypher/static/js/main.fecd71ee.chunk.js"
+    "revision": "71341147832c9cea5a41c8e13472d311",
+    "url": "/Psypher/static/media/Background.71341147.png"
+  },
+  {
+    "revision": "72a2574d85a672e10ac55422112b0e3a",
+    "url": "/Psypher/static/media/WhyClockPic.72a2574d.jpg"
   },
   {
     "revision": "3c9b98369e1c8a8a2a09fdd05c6ad0c5",
@@ -96,12 +80,16 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/Workshop4.77c942ca.jpg"
   },
   {
-    "revision": "26e4d4e919e5d2be6ae70070fd81eb14",
-    "url": "/Psypher/static/media/Workshop5.26e4d4e9.png"
+    "revision": "16c742ed24eaec83586dce6d4126a7df",
+    "url": "/Psypher/static/media/Workshop5.16c742ed.jpg"
   },
   {
     "revision": "69fc25f4c164c6ef9a154e1e3fa4fc73",
     "url": "/Psypher/static/media/Workshop6.69fc25f4.jpg"
+  },
+  {
+    "revision": "1bc32b8715a2ca7e2f26de020e7a170e",
+    "url": "/Psypher/static/media/AnthonyLee.1bc32b87.jpg"
   },
   {
     "revision": "526cec51d280b4b83efc2eb24ddac11a",
@@ -124,7 +112,7 @@ self.__precacheManifest = [
     "url": "/Psypher/static/media/ArnelCalvario.07e07372.JPG"
   },
   {
-    "revision": "b12fb1d39de6b4788062c5a182e23d33",
+    "revision": "52459e64ad3bf30aa7a1d903362d0cba",
     "url": "/Psypher/index.html"
   }
 ];
