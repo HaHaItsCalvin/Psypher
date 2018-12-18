@@ -15,7 +15,7 @@ import HomeMissionCards from './HomeMissionCards.js';
 import HomeTestimonialsCards from './HomeTestimonialsCards.js';
 import HomeMediaCards from './HomeMediaCards.js';
 import HomeMissionPics from './HomeMissionPics.js';
-import StatsCards from './StatsCard.js';
+import HomeStatsCards from './HomeStatsCard.js';
 
 import TestimonialsPic from './TestimonialsPic.jpg';
 import instaIcon from './instaIcon.jpg';
@@ -37,7 +37,7 @@ import WorkshopPic1 from './Workshop1.jpg';
 import WorkshopPic2 from './Workshop2.jpg';
 import WorkshopPic3 from './Workshop3.jpg';
 import WorkshopPic4 from './Workshop4.jpg';
-import WorkshopPic5 from './Workshop5.png';
+import WorkshopPic5 from './Workshop5.jpg';
 import WorkshopPic6 from './Workshop6.jpg';
 //import Image from 'material-ui-image'
 
@@ -64,24 +64,26 @@ const styles = theme => ({
 	},
 	missionUnit:{
 		backgroundColor:'white',
-		paddingTop:50,
-		paddingLeft: 50,
-		paddingRight:50,
-		paddingBottom:'15vh',
+		paddingTop:10,
+		paddingBottom:'5vh',
+		paddingLeft:5,
+		paddingRight:5,
 
 	},
 	missionBody:{
 		paddingTop:25,
 		paddingBottom:25,
+		paddingRight:'10vh',
+		paddingLeft:'10vh',
 	},
 	StatisticsUnit:{
-		paddingLeft: '17vh',
-		paddingRight:'17vh',
+		paddingLeft: '13vh',
+		paddingRight:'13vh',
 		paddingBottom:50,
 	},
 	Statistics:{
-		paddingLeft: 50,
-		paddingRight:50,
+		paddingTop:'8vh',
+		paddingRight:'20vh',
 		backgroundImage: `url(${StatsBackgroundPic})`,
 		backgroundSize:'contain',
 		backgroundRepeat:'no-repeat',
@@ -99,6 +101,7 @@ const styles = theme => ({
 		zIndex:"-1",
 		backgroundPosition:'center',
 		backgroundAttachment:'fixed',
+		opacity:0.6,
 	},
 	WhyText:{
 		paddingBottom:'5vh',
@@ -117,6 +120,7 @@ const styles = theme => ({
 		paddingLeft: 50,
 		paddingRight:50,
 		paddingBottom:50,
+		paddingTop:'5vh',
 		backgroundImage: `url(${TestimonialsPic})`,
 		backgroundSize:'cover',
 		backgroundRepeat:'no-repeat',
@@ -125,6 +129,10 @@ const styles = theme => ({
 		zIndex:"-1",
 		backgroundPosition:'center',
 		backgroundAttachment:'fixed',
+	},
+	testimonialHeader:{
+		color:'#B388FF',
+		paddingBottom:35, 
 	},
 	contactUnit:{
 		paddingTop:'10vh',
@@ -139,6 +147,7 @@ const styles = theme => ({
 	contactHeader:{
 		paddingBottom:'15vh',
 		paddingLeft:'15vh',
+		paddingTop:'5vh',
 	},
 	ContactMediaBody:{
 		paddingLeft:'20vh',
@@ -167,7 +176,24 @@ const styles = theme => ({
 	},
 });
 
-//const theme = createMuiTheme({		});
+const theme = createMuiTheme({
+  palette: {
+  	primary: {
+      light: '#757ce8',
+      main: '#212121',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+    	main: '#9900ff',
+   		dark:'#7e518d',
+   		contrastText: '#000',
+    },
+    textGrey:{
+    	main:'#9E9E9E',
+    },
+  },
+});
 
 function HomePage(props) {
 	const { classes } = props;	
@@ -176,6 +202,7 @@ function HomePage(props) {
     console.log(process.env.PUBLIC_URL)
     console.log('end')
 	return(
+	<MuiThemeProvider theme={theme}>
 	<React.Fragment>
   		<CssBaseline />
 			<header> 
@@ -211,14 +238,14 @@ function HomePage(props) {
 				    </Grid>
 				    <Grid container direction ='row' alignItems='center' className={classes.missionBody}>
 				    	<Grid item xs={12} sm={4}>
-							<Typography align='right' variant='h3' color='textPrimary'>
-									WHO AND
+							<Typography align='right' variant='h3' color='primary'>
+									<b>WHO AND</b>
 							</Typography>
-							<Typography align='right' variant='h3' color='textPrimary'>
-									WHAT
+							<Typography align='right' variant='h3' color='primary'>
+									<b>WHAT</b>
 							</Typography>
-							<Typography align='right' variant='h3' color='textPrimary'>
-									IS <span>PSYPHER</span>
+							<Typography align='right' variant='h3' color='primary'>
+									<b>IS <span style={{color:'#9900ff'}}> PSYPHER </span></b>
 							</Typography>
 				    	</Grid>
 				    	<Grid item xs={0} sm={1}>
@@ -227,7 +254,7 @@ function HomePage(props) {
 						</Grid>
 				    	<Grid item xs={12} sm={6}>
 					    	<Typography align='center'> 
-					    		<span>OUR MISSION </span>is to destigmatize mental health 
+					    		<span><b>OUR MISSION</b> </span>is to destigmatize mental health 
 					    	</Typography>
 					    	<Typography align='center'>
 					    		through urban dance workshops that
@@ -287,32 +314,32 @@ function HomePage(props) {
 			    	<Grid container direction='row' alignItems='center' spacing={16}>
 				    	<Grid item xs={12} sm={12} container direction='column' spacing={24} class={classes.Statistics} justify='center' alignItems='center'> 
 				    		<Typography align='left' variant='subtitle1'> OUR PURPOSE </Typography>
-				    		<Typography align='left' variant='h4'> WHY </Typography>
-				    		<Typography align='left' variant='h4'> PSYPHER </Typography>
+				    		<Typography align='left' variant='h3' color='primary'> <b>WHY</b> </Typography>
+				    		<Typography align='left' variant='h3' style={{color:'#7e518d'}}> <b>PSYPHER</b> </Typography>
 				    		<Grid item container direction='row' justify='center' spacing={32} style={{paddingTop:'10vh'}}>
-								<Grid item xs={12} sm={6} med={3} lg={3}>
-									<StatsCards 
+								<Grid item xs={12} sm={3} med={3} lg={3}>
+									<HomeStatsCards 
 										img={StatsPic1}
 										Title="DEATH BY SUICIDE"
 										Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
 									/>		    		
 								</Grid>
-						    	<Grid item xs={12} sm={6} med={3} lg={3}>
-									<StatsCards 
+						    	<Grid item xs={12} sm={3} med={3} lg={3}>
+									<HomeStatsCards 
 										img={StatsPic2}
 										Title="13 SECONDS"
 										Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
 									/>		    		
 								</Grid>
-					    		<Grid item xs={12} sm={6} med={3} lg={3}>
-									<StatsCards 
+					    		<Grid item xs={12} sm={3} med={3} lg={3}>
+									<HomeStatsCards 
 										img={StatsPic3}
 										Title="90% OF CASES"
 										Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
 									/>		    		
 								</Grid>
-					    		<Grid item xs={12} sm={6} med={3} lg={3}>
-									<StatsCards 
+					    		<Grid item xs={12} sm={3} med={3} lg={3}>
+									<HomeStatsCards 
 										img={StatsPic4}
 										Title="14 YEARS OLD"
 										Body="50% of all lifetime cases of mental illness begin by age 14, 75% of them begin by age 24."
@@ -351,7 +378,7 @@ function HomePage(props) {
 
 			{/*Start Testimonials Section */}
 				<div className={classes.TestimonialsUnit}>
-					<h1 align='center'> Testimonials: How Psypher Makes an Impact</h1>
+					<h1 align='center' className={classes.testimonialHeader}> Testimonials: How Psypher Makes an Impact</h1>
 				    <Grid container direction= 'row' className={classes.Testimonials} alignItems="center" justify="center" spacing='40' xs={12} s={12} med={12} lg={12} xl={12}>
 				    	<Grid item sm={4}> 
 							<HomeTestimonialsCards
@@ -385,28 +412,28 @@ function HomePage(props) {
 
 			{/*Start ContactUs Section*/}
 				<div className={classes.contactUnit}>
-			    		<Typography variant='h2'  align='center' className={classes.contactHeader}> GET IN TOUCH!</Typography>
+			    		<Typography variant='h2'  align='center' className={classes.contactHeader}> <b>GET IN TOUCH!</b></Typography>
 						<Grid container spacing={40} direction='row' justify='center' alignItems='center' className={classes.ContactMediaBody}>
-							<Grid item>
+							<Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
 								<HomeMediaCards 
 									img={youtubeIcon}
 									Title="PSYPHER LA"
 									Body="Subscribe to our YouTube channel to watch videos of our work!"
 								/>		    		
 							</Grid>
-					    	<Grid item>
-								<HomeMediaCards 
-									img={emailIcon}
-									Title="PSYPHEROFFICIAL.LA@GMAIL.COM"
-									Body="Don't worry about us missing your message; we check our email daily!"
-								/>		    		
-							</Grid>
-				    		<Grid item>
+				    		<Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
 								<HomeMediaCards 
 									img={instaIcon}
 									Title="PSYPHERLA"
 									Body="Follow our Instagram page to keep up with our promos for future events!"
 									/>
+							</Grid>
+					    	<Grid item xs={12} sm={3} med={3} lg={3} xl={3}>
+								<HomeMediaCards 
+									img={emailIcon}
+									Title="PSYPHEROFFICIAL.LA@GMAIL.COM"
+									Body="Don't worry about us missing your message; we check our email daily!"
+								/>		    		
 							</Grid>
 				    		
 				    	</Grid>
@@ -415,6 +442,7 @@ function HomePage(props) {
 	        </main>
 		<Footer/>
 	</React.Fragment>
+	</MuiThemeProvider >
 	)
 	
 }

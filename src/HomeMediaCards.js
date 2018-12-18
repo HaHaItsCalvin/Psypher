@@ -14,6 +14,9 @@ const styles = theme => ({
     display:'block',
     position:'center,'
   },
+  bold:{
+    fontSize:11
+  }
 });
 
 function HomeMediaCards(props) {
@@ -21,10 +24,10 @@ function HomeMediaCards(props) {
   return (
         <div>
             <img src={props.img} className={classes.img}/>
-            <Typography align='center' color='textPrimary' variant='h6'>
-              {props.Title}
+            <Typography align='center' className={classes.bold} variant='h7'>
+              <b>{props.Title}</b>
             </Typography>
-            <Typography align='center' color='textPrimary' >
+            <Typography align='center' style={{color:'#707070'}} >
               {props.Body}
             </Typography>
          </div>   

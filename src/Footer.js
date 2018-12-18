@@ -34,17 +34,17 @@ const styles = theme => ({
 
 const footers = [
   {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us'],
+    title: 'About',
+    description: ['Team', 'History', 'Contact Us'],
   },
   
   {
     title: 'Social Media',
-    description: ['YouTube', 'Facebook', 'Instagram', 'Twitter'],
+    description: ['YouTube', 'Instagram', 'Email', 'Facebook'],
   },
   {
     title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
+    description: ['Privacy Policy', 'Terms of Use'],
   },
 ];
 
