@@ -328,15 +328,13 @@ function HomePage(props) {
 									<HomeStatsCards 
 										img={StatsPic2}
 										Title="13 SECONDS"
-										Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
-									/>		    		
+										Body="Every 13 seconds, someone takes their own life in the United States."/>		    		
 								</Grid>
 					    		<Grid item xs={12} sm={3} med={3} lg={3}>
 									<HomeStatsCards 
 										img={StatsPic3}
 										Title="90% OF CASES"
-										Body="Suicide is the 2nd leading cause of death for young peopel ages 10-34 years old."
-									/>		    		
+										Body="90% of people who commit suicide had underlying mental illness."/>		    		
 								</Grid>
 					    		<Grid item xs={12} sm={3} med={3} lg={3}>
 									<HomeStatsCards 
